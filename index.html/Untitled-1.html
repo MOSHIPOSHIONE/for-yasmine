@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Through Time, With Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Music Player (hidden by default) -->
+    <audio id="bg-music" loop>
+        <source src="oursong.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Control Button -->
+    <button id="music-control" class="music-btn">Play Music</button>
+
+    <header class="header">
+        <h1>Through Time, With Love</h1>
+        <p class="intro-text">To the love of my life, my best friend, my heart's truest companion. This site is a small tribute to everything we've been through together — every laugh, every tear, every special moment. I created this for you as a reminder of how much I love you and how grateful I am for every moment shared.</p>
+    </header>
+
+    <section class="story">
+        <h2>How It All Began</h2>
+        <p>It feels like just yesterday when our paths crossed for the first time. I never could have imagined the journey we’d take together, or the love that would grow between us. From the moment we met, I knew there was something extraordinary about you. Through laughter and challenges, we've woven a story that’s uniquely ours, and I cherish every page of it.</p>
+    </section>
+
+    <section class="memories">
+        <h2>Moments We’ve Made</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Special moment 1">
+            <img src="image2.jpg" alt="Special moment 2">
+            <img src="image3.jpg" alt="Special moment 3">
+        </div>
+    </section>
+
+    <section class="closing">
+        <h2>To Forever</h2>
+        <p>No matter where life takes us, I will always be by your side. Our love has been tested, strengthened, and grown, and there is nothing I wouldn't do for you. Here’s to forever together, my heart. I love you, endlessly.</p>
+    </section>
+
+    <footer>
+        <p>Created with love by [Your Name]</p>
+    </footer>
+
+    <script>
+        // Get the audio element and button
+        const musicControlButton = document.getElementById('music-control');
+        const audioElement = document.getElementById('bg-music');
+
+        // Play the music when the page loads
+        window.onload = function() {
+            audioElement.play();
+            musicControlButton.textContent = "Pause Music"; // Update button text
+        };
+
+        // Toggle music play/pause when the button is clicked
+        musicControlButton.onclick = function() {
+            if (audioElement.paused) {
+                audioElement.play();
+                musicControlButton.textContent = "Pause Music";
+            } else {
+                audioElement.pause();
+                musicControlButton.textContent = "Play Music";
+            }
+        };
+    </script>
+</body>
+</html>
+
