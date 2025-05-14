@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Through Time, With Love</title>
+    <title>The Art of Loving You</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,32 +17,77 @@
     <button id="music-control" class="music-btn">Play Music</button>
 
     <header class="header">
-        <h1>Through Time, With Love</h1>
-        <p class="intro-text">To the love of my life, my best friend, my heart's truest companion. This site is a small tribute to everything we've been through together — every laugh, every tear, every special moment. I created this for you as a reminder of how much I love you and how grateful I am for every moment shared.</p>
+        <h1>In Another Life, I’d always Choose You</h1>
+        <p class="intro-text">Maybe this life wasn’t ours to keep…  
+        But if the stars ever align again,  
+        I’d find you all over — in the quiet, in the chaos,  
+        and I’d choose you… every single time.</p>
     </header>
 
     <section class="story">
-        <h2>How It All Began</h2>
-        <p>It feels like just yesterday when our paths crossed for the first time. I never could have imagined the journey we’d take together, or the love that would grow between us. From the moment we met, I knew there was something extraordinary about you. Through laughter and challenges, we've woven a story that’s uniquely ours, and I cherish every page of it.</p>
+        <h2>When Heaven Fell to Earth</h2>
+        <img src="image1.jpg" alt="Special moment 1">
+        <p>It feels like just yesterday — that moment when everything changed.  
+        I was drifting, untethered, caught in a fog of questions with no answers. Life felt like a blurred sketch of chaos — nothing made sense, and nothing seemed right. I was lost… not just in place, but in purpose.  
+
+        And then, there was you.  
+
+        Out of nowhere — as if the universe grew tired of watching me wander — you appeared. Not walked in, not arrived… appeared. Like something divine had cracked the sky open just enough to let you fall through.  
+
+        An angel.  
+
+        I remember the day so clearly, though I once thought it unremarkable. Just another dumb, aimless day. I had a joint in one hand and emptiness in the other. But the moment I looked into your eyes, the haze cleared. The smoke, the noise, the weight — all of it disappeared. It was as if my soul had been sleeping until it saw you… and suddenly, it remembered how to feel.  
+
+        Something inside me shifted, quietly but completely. I didn’t know what it was then — only that I had to follow it. A few days later, I quit my job, not for logic or reason, but because every part of me was screaming that my place was wherever you were.  
+
+        And I did.  
+
+        Because some people walk into your life.  
+        But you... you walked into my destiny.</p>
     </section>
 
     <section class="memories">
         <h2>Moments We’ve Made</h2>
         <div class="gallery">
-            <img src="image1.jpg" alt="Special moment 1">
-            <img src="image2.jpg" alt="Special moment 2">
-            <img src="image3.jpg" alt="Special moment 3">
+            <img src="image2.JPG" alt="Special moment 1">
+            <img src="image3.JPG" alt="Special moment 2">
+            <img src="image4.JPG" alt="Special moment 3">
+            <img src="image5.JPG" alt="Special moment 3">
+            <img src="image6.JPG" alt="Special moment 3">
+            <img src="image8.JPG" alt="Special moment 3">
+            <img src="image9.JPG" alt="Special moment 3">
+            <img src="image10.JPG" alt="Special moment 3">
         </div>
     </section>
 
     <section class="closing">
         <h2>To Forever</h2>
-        <p>No matter where life takes us, I will always be by your side. Our love has been tested, strengthened, and grown, and there is nothing I wouldn't do for you. Here’s to forever together, my heart. I love you, endlessly.</p>
+        <p>No matter where life takes us,You will be always in my hearth. Our love has been tested, strengthened, and grown, and there is nothing I wouldn't do for you. Here’s to forever together, my heart. I love you, endlessly.</p>
     </section>
 
     <footer>
-        <p>Created with love by [Your Name]</p>
+        <p>Created with love by your 3li<3</p>
     </footer>
+
+    <!-- "Touch Me" Button -->
+    <button id="touchMeBtn">Touch Me</button>
+
+    <!-- Last Universe Section -->
+    <div id="last-universe">
+        <div id="universe-messages">
+            <p>Maybe we can't be together in this world...</p>
+            <p>But in another life, I'd choose you.</p>
+            <p>Every time.</p>
+            <p>The stars whispered our story.</p>
+            <p>Our love is written in the sky.</p>
+            <p>We were destined to meet... even if it was only for a moment.</p>
+            <p>This love, beyond time, beyond space...</p>
+            <p>It's a story we'll tell in the next life.</p>
+            <p>For now, we remain in the universe we built...</p>
+            <p>But someday, the stars will align again.</p>
+            <p>And when they do, I'll find you. Always.</p>
+        </div>
+    </div>
 
     <script>
         // Get the audio element and button
@@ -65,7 +110,21 @@
                 musicControlButton.textContent = "Play Music";
             }
         };
+
+        // "Touch Me" button functionality
+        const touchMeButton = document.getElementById('touchMeBtn');
+        const lastUniverseSection = document.getElementById('last-universe');
+
+        touchMeButton.onclick = function() {
+            lastUniverseSection.style.display = 'flex';
+            // Fade in the stars and messages
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                setTimeout(() => {
+                    star.style.opacity = '1';
+                }, index * 500);
+            });
+        };
     </script>
 </body>
 </html>
-

@@ -25,39 +25,49 @@ header p {
     color: #fff;
 }
 
-/* About Section */
-#about {
-    background-color: #FFFFFF; /* White */
+/* Story Section */
+.story {
     padding: 30px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
 }
 
-#about h2 {
+.story h2 {
     color: #B76E79; /* Rose Gold for headings */
 }
 
-#about p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-/* Photo Gallery */
-#photos {
-    background-color: #FFFFFF; /* White */
-    padding: 30px;
-    margin: 20px;
+.story img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
-#photos .photo-gallery {
+.story p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Moments Section */
+.memories {
+    padding: 30px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+.memories h2 {
+    color: #B76E79; /* Rose Gold for headings */
+}
+
+.memories .gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#photos img {
+.memories img {
     width: 300px;
     height: 200px;
     object-fit: cover;
@@ -67,4 +77,111 @@ header p {
     transition: transform 0.3s ease-in-out;
 }
 
-#p
+/* Closing Section */
+.closing {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.closing p {
+    font-size: 1.5rem;
+    line-height: 2;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #D4A0A7; /* Golden Rose */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* "Touch Me" Button */
+#touchMeBtn {
+    display: block;
+    margin: 80px auto 40px auto;
+    padding: 15px 30px;
+    background-color: #B76E79; /* Rose Gold */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#touchMeBtn:hover {
+    background-color: #a75966;
+}
+
+/* Last Universe Section */
+#last-universe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Night sky */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Stars Animation */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+}
+
+/* Universe Messages */
+#universe-messages {
+    max-width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    z-index: 10;
+    animation: fadeIn 4s ease-in-out 1;
+}
+
+#universe-messages p {
+    margin: 20px 0;
+    opacity: 0;
+    animation: messageFade 1s ease-in-out forwards;
+}
+
+#universe-messages p:nth-child(1) { animation-delay: 1s; }
+#universe-messages p:nth-child(2) { animation-delay: 3s; }
+#universe-messages p:nth-child(3) { animation-delay: 5s; }
+#universe-messages p:nth-child(4) { animation-delay: 7s; }
+#universe-messages p:nth-child(5) { animation-delay: 9s; }
+#universe-messages p:nth-child(6) { animation-delay: 11s; }
+#universe-messages p:nth-child(7) { animation-delay: 13s; }
+#universe-messages p:nth-child(8) { animation-delay: 15s; }
+#universe-messages p:nth-child(9) { animation-delay: 17s; }
+#universe-messages p:nth-child(10) { animation-delay: 19s; }
+#universe-messages p:nth-child(11) { animation-delay: 21s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes messageFade {
+    to { opacity: 1; }
+}
