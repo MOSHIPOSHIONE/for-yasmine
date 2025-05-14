@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #F8C8DC; /* Soft Pink Background */
+    background-color: #F8C8DC; /* Soft Pink */
     color: #333;
     margin: 0;
     padding: 0;
@@ -12,29 +12,41 @@ header {
     background-color: #D4A0A7; /* Golden Rose */
     text-align: center;
     padding: 50px 20px;
-    color: #fff; /* White text */
+    color: #fff;
 }
 
 header h1 {
     font-size: 3rem;
-    color: #fff;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.5rem;
+}
+
+/* Music Control Button */
+#music-control {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #B76E79;
     color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 /* Story Section */
 .story {
     padding: 30px;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #fff;
     text-align: center;
 }
 
 .story h2 {
-    color: #B76E79; /* Rose Gold for headings */
+    color: #B76E79;
+    font-size: 2rem;
 }
 
 .story img {
@@ -47,42 +59,50 @@ header p {
 .story p {
     font-size: 1.2rem;
     line-height: 1.8;
+    margin-top: 20px;
 }
 
-/* Moments Section */
+/* Memories Section */
 .memories {
     padding: 30px;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #fff;
     text-align: center;
 }
 
 .memories h2 {
-    color: #B76E79; /* Rose Gold for headings */
+    color: #B76E79;
 }
 
-.memories .gallery {
+.gallery {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.memories img {
+.gallery img {
     width: 300px;
     height: 200px;
     object-fit: cover;
-    margin: 10px;
     border-radius: 10px;
-    border: 3px solid #B76E79; /* Rose Gold border */
-    transition: transform 0.3s ease-in-out;
+    border: 3px solid #B76E79;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 /* Closing Section */
 .closing {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 30px;
     text-align: center;
-    color: #333;
+}
+
+.closing h2 {
+    color: #B76E79;
+    font-size: 2rem;
 }
 
 .closing p {
@@ -93,7 +113,7 @@ header p {
 
 /* Footer */
 footer {
-    background-color: #D4A0A7; /* Golden Rose */
+    background-color: #D4A0A7;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -102,15 +122,15 @@ footer {
 /* "Touch Me" Button */
 #touchMeBtn {
     display: block;
-    margin: 80px auto 40px auto;
+    margin: 60px auto 40px;
     padding: 15px 30px;
-    background-color: #B76E79; /* Rose Gold */
+    background-color: #B76E79;
     color: white;
     border: none;
     border-radius: 30px;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 #touchMeBtn:hover {
@@ -124,28 +144,13 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000; /* Night sky */
+    background-color: black;
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     z-index: 9999;
     overflow: hidden;
-}
-
-/* Stars Animation */
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: white;
-    border-radius: 50%;
-    animation: twinkle 2s infinite ease-in-out;
-}
-
-@keyframes twinkle {
-    0%, 100% { opacity: 0.2; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.5); }
 }
 
 /* Universe Messages */
@@ -156,7 +161,6 @@ footer {
     font-size: 1.4rem;
     line-height: 2.2rem;
     z-index: 10;
-    animation: fadeIn 4s ease-in-out 1;
 }
 
 #universe-messages p {
@@ -177,11 +181,7 @@ footer {
 #universe-messages p:nth-child(10) { animation-delay: 19s; }
 #universe-messages p:nth-child(11) { animation-delay: 21s; }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 @keyframes messageFade {
     to { opacity: 1; }
 }
+
