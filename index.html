@@ -1,90 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Art of Loving You</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Art of Loving You</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <audio id="bg-music" autoplay loop>
-        <source src="oursong.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+  <!-- Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="oursong.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
 
-    <button id="music-control">Pause Music</button>
+  <!-- Header -->
+  <header>
+    <h1>In Another Life, I’d always Choose You</h1>
+    <p>Maybe this life wasn’t ours to keep…  
+    But if the stars ever align again,  
+    I’d find you all over — in the quiet, in the chaos,  
+    and I’d choose you… every single time.</p>
+  </header>
 
-    <header>
-        <h1>In Another Life, I’d always Choose You</h1>
-        <p>Maybe this life wasn’t ours to keep… But if the stars ever align again, I’d find you all over — in the quiet, in the chaos, and I’d choose you… every single time.</p>
-    </header>
+  <!-- Story -->
+  <section class="story">
+    <h2>When Heaven Fell to Earth</h2>
+    <img src="images/image1.JPG" alt="memory 1" />
+    <p>It feels like just yesterday — that moment when everything changed.  
+    I was drifting, untethered, caught in a fog of questions with no answers. Life felt like a blurred sketch of chaos — nothing made sense, and nothing seemed right. I was lost… not just in place, but in purpose.  
 
-    <section class="story">
-        <h2>When Heaven Fell to Earth</h2>
-        <img src="image1.jpg" alt="Special moment 1">
-        <p>It feels like just yesterday — that moment when everything changed...</p>
-    </section>
+    And then, there was you.  
 
-    <section class="memories">
-        <h2>Moments We’ve Made</h2>
-        <div class="gallery">
-            <img src="image2.JPG" alt="Special moment 2">
-            <img src="image3.JPG" alt="Special moment 3">
-            <img src="image4.JPG" alt="Special moment 4">
-            <img src="image5.JPG" alt="Special moment 5">
-            <img src="image6.JPG" alt="Special moment 6">
-            <img src="image8.JPG" alt="Special moment 7">
-            <img src="image9.JPG" alt="Special moment 8">
-            <img src="image10.JPG" alt="Special moment 9">
-        </div>
-    </section>
+    Out of nowhere — as if the universe grew tired of watching me wander — you appeared. Not walked in, not arrived… appeared. Like something divine had cracked the sky open just enough to let you fall through.  
 
-    <section class="closing">
-        <h2>To Forever</h2>
-        <p>No matter where life takes us, you will always be in my heart. Our love has been tested, strengthened, and grown, and there is nothing I wouldn't do for you. Here’s to forever together, my heart. I love you, endlessly.</p>
-    </section>
+    An angel.  
 
-    <footer>
-        <p>Created with love by your 3li &lt;3</p>
-    </footer>
+    I remember the day so clearly, though I once thought it unremarkable. Just another dumb, aimless day. I had a joint in one hand and emptiness in the other. But the moment I looked into your eyes, the haze cleared. The smoke, the noise, the weight — all of it disappeared. It was as if my soul had been sleeping until it saw you… and suddenly, it remembered how to feel.  
 
-    <button id="touchMeBtn">Touch Me</button>
+    Something inside me shifted, quietly but completely. I didn’t know what it was then — only that I had to follow it. A few days later, I quit my job, not for logic or reason, but because every part of me was screaming that my place was wherever you were.  
 
-    <div id="last-universe">
-        <div id="universe-messages">
-            <p>Maybe we can't be together in this world...</p>
-            <p>But in another life, I'd choose you.</p>
-            <p>Every time.</p>
-            <p>The stars whispered our story.</p>
-            <p>Our love is written in the sky.</p>
-            <p>We were destined to meet... even if it was only for a moment.</p>
-            <p>This love, beyond time, beyond space...</p>
-            <p>It's a story we'll tell in the next life.</p>
-            <p>For now, we remain in the universe we built...</p>
-            <p>But someday, the stars will align again.</p>
-            <p>And when they do, I'll find you. Always.</p>
-        </div>
+    And I did.  
+
+    Because some people walk into your life.  
+    But you... you walked into my destiny.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="memories">
+    <h2>Moments We’ve Made</h2>
+    <div class="gallery">
+      <img src="images/image2.JPG" alt="Memory 2" />
+      <img src="images/image3.JPG" alt="Memory 3" />
+      <img src="images/image4.JPG" alt="Memory 4" />
+      <img src="images/image5.JPG" alt="Memory 5" />
+      <img src="images/image6.JPG" alt="Memory 6" />
+      <img src="images/image7.JPG" alt="Memory 7" />
+      <img src="images/image8.JPG" alt="Memory 8" />
+      <img src="images/image9.JPG" alt="Memory 9" />
+      <img src="images/image10.JPG" alt="Memory 10" />
     </div>
+  </section>
 
-    <script>
-        const musicControlButton = document.getElementById('music-control');
-        const audioElement = document.getElementById('bg-music');
+  <!-- Closing -->
+  <section class="closing">
+    <h2>To Forever</h2>
+    <p>No matter where life takes us, You will be always in my hearth. Our love has been tested, strengthened, and grown, and there is nothing I wouldn't do for you. Here’s to forever together, my heart. I love you, endlessly.</p>
+  </section>
 
-        musicControlButton.onclick = function () {
-            if (audioElement.paused) {
-                audioElement.play();
-                musicControlButton.textContent = "Pause Music";
-            } else {
-                audioElement.pause();
-                musicControlButton.textContent = "Play Music";
-            }
-        };
+  <footer>
+    <p>Created with love by your 3li&lt;3</p>
+  </footer>
 
-        const touchMeButton = document.getElementById('touchMeBtn');
-        const lastUniverseSection = document.getElementById('last-universe');
+  <!-- Touch Me Button -->
+  <button id="touchMeBtn">Touch Me</button>
 
-        touchMeButton.onclick = function () {
-            lastUniverseSection.style.display = 'flex';
-        };
-    </script>
+  <!-- Universe Section -->
+  <div id="last-universe">
+    <div id="universe-messages">
+      <p>Maybe we can't be together in this world...</p>
+      <p>But in another life, I'd choose you.</p>
+      <p>Every time.</p>
+      <p>The stars whispered our story.</p>
+      <p>Our love is written in the sky.</p>
+      <p>We were destined to meet... even if it was only for a moment.</p>
+      <p>This love, beyond time, beyond space...</p>
+      <p>It's a story we'll tell in the next life.</p>
+      <p>For now, we remain in the universe we built...</p>
+      <p>But someday, the stars will align again.</p>
+      <p>And when they do, I'll find you. Always.</p>
+    </div>
+  </div>
+
+  <script>
+    // "Touch Me" button
+    document.getElementById("touchMeBtn").addEventListener("click", function () {
+      const universe = document.getElementById("last-universe");
+      universe.style.display = "flex";
+
+      // Add stars
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.top = Math.random() * 100 + "%";
+        star.style.left = Math.random() * 100 + "%";
+        star.style.animationDelay = Math.random() * 2 + "s";
+        document.getElementById("last-universe").appendChild(star);
+      }
+    });
+  </script>
 </body>
 </html>
